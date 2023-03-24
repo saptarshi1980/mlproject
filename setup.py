@@ -12,6 +12,7 @@ def get_requirements(FILE_PATH:str)->List[str]:
         requirement_list.append(file_obj.readline().replace("\n",""))
     if HYPHEN_E_DOT in requirement_list:
         requirement_list.replace(HYPHEN_E_DOT,"")
+    print("*************")
     return requirement_list
 
     
